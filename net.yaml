@@ -531,6 +531,10 @@ proxies:
   port: 7890
   server: 10.135.198.133
   type: http
+- name: SWU-127
+  port: 7890
+  server: 10.70.205.103
+  type: http
 proxy-groups:
 - name: SWU
   proxies:
@@ -661,6 +665,7 @@ proxy-groups:
   - SWU-124
   - SWU-125
   - SWU-126
+  - SWU-127
   type: select
 - interval: 300
   name: ♻️ 自动选择
@@ -791,6 +796,7 @@ proxy-groups:
   - SWU-124
   - SWU-125
   - SWU-126
+  - SWU-127
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
